@@ -2,16 +2,19 @@
 <!-- id="app" associato a questo div non serve, è già stato dichiarato in index.html-->
   <div>
     <PageTitle></PageTitle>
+    <JumboTron></JumboTron>
   </div>
 </template>
 
 <script>
 import PageTitle from "./components/PageTitle.vue";
+import JumboTron from "./components/JumboTron.vue";
 
 export default {
   components: {
     PageTitle,
-  },
+    JumboTron,
+},
   data(){
     return {
       message: 'Hello Vue!'
