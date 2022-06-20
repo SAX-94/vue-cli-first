@@ -1,18 +1,22 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!-- id="app" associato a questo div non serve, è già stato dichiarato in index.html-->
+  <div>
+    <PageTitle></PageTitle>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PageTitle from "./components/PageTitle.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    PageTitle,
+  },
+  data(){
+    return {
+      message: 'Hello Vue!'
+    }
+  },  
 }
 </script>
 
